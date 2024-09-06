@@ -1,7 +1,6 @@
 import re
 
 
-
 def validate_egyptian_phone_number(phone_number):
     regx = '^(00201|201|\+201|01|1)(0|1|2|5)([0-9]{8})$'
     return bool(re.match(regx, phone_number))
